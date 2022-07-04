@@ -54,13 +54,13 @@ nav {
     width: 50%;
 }
 
-.nav-items ul {
+.nav-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-items li {
+.nav-items li a {
     font-size: 14px;
     font-weight: 500;
 }
@@ -78,16 +78,17 @@ nav {
     color: var(--gray);
 }
 
-.contact-info ul {
+.contact-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.contact-info ul li{
+.contact-info li{
     font-size: 14px;
+    font-weight: 500;
 }
 
-.contact-info ul li a:hover{
+.contact-info li a:hover{
     color: var(--blue);
 }
 
@@ -160,6 +161,7 @@ nav {
 
 .project-categories-buttons button {
     color: var(--black);
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     background-color: var(--light-bg);
     border: none;
@@ -180,10 +182,12 @@ nav {
 }
 
 .project-name {
+    font-size: 18px;
     font-weight: 700;
 }
 
 .project-category {
+    font-size: 16ppx;
     color: var(--gray);
 }
 
