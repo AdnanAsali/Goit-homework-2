@@ -22,9 +22,6 @@ li {
 }
 
 /* Nav & Header */
-.logo {
-    display: inline-block;
-}
 
 header {
     display: flex;
@@ -42,14 +39,14 @@ nav {
 
 }
 
-.logo a {
+.logo {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 24px;
     color: var(--blue);
 }
 
-.logo a span {
+.logo span {
     color: var(--black);
 }
 
@@ -65,6 +62,11 @@ nav {
 
 .nav-items li {
     font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-items li a:hover {
+    color: var(--blue);
 }
 
 .active a {
@@ -87,7 +89,6 @@ nav {
 
 .contact-info ul li a:hover{
     color: var(--blue);
-    transition: 500ms;
 }
 
 /* Heading section */
@@ -116,6 +117,8 @@ nav {
     width: 200px;
     height: 50px;
     cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 .reason {
@@ -123,7 +126,7 @@ nav {
 }
 
 .reason-title {
-    font-weight: bold;
+    font-weight: 700;
     color: var(--black);
 }
 
@@ -134,25 +137,21 @@ nav {
 .section-title {
     text-align: center;
     font-size: 36px;
+    font-weight: 700;
 }
 
 .our-team-section {
     background-color: var(--light-bg);
 }
 
-/* .member-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
 .member-name {
+    font-size: 16px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .member-role {
+    font-size: 16px;
     text-align: center;
     color: var(--gray);
 }
@@ -161,7 +160,7 @@ nav {
 
 .project-categories-buttons button {
     color: var(--black);
-    font-weight: 600;
+    font-weight: 500;
     background-color: var(--light-bg);
     border: none;
     border-radius: 4;
@@ -175,8 +174,13 @@ nav {
     color: white;
 }
 
+.project-categories-buttons button:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
 .project-name {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .project-category {
@@ -207,4 +211,8 @@ footer {
 .business-details a {
     color: var(--gray);
     font-style: normal;
+}
+
+.footer-content .address a:hover, .business-details a:hover {
+    color: white;
 }
