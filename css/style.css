@@ -12,10 +12,6 @@ li {
     list-style: none;
 }
 
-ul {
-    padding: 0px;
-}
-
 /* CSS Color Pallete Variables */
 :root {
     --black: #212121;
@@ -68,7 +64,7 @@ nav {
 }
 
 .nav-items li {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .active a {
@@ -77,6 +73,7 @@ nav {
 
 .contact-info {
     width: 300px;
+    color: var(--gray);
 }
 
 .contact-info ul {
@@ -85,7 +82,12 @@ nav {
     align-items: center;
 }
 .contact-info ul li{
-    font-size: 13px;
+    font-size: 14px;
+}
+
+.contact-info ul li a:hover{
+    color: var(--blue);
+    transition: 500ms;
 }
 
 /* Heading section */
@@ -114,4 +116,95 @@ nav {
     width: 200px;
     height: 50px;
     cursor: pointer;
+}
+
+.reason {
+    font-size: 14px;
+}
+
+.reason-title {
+    font-weight: bold;
+    color: var(--black);
+}
+
+.reason-text {
+    color: var(--gray);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+}
+
+.our-team-section {
+    background-color: var(--light-bg);
+}
+
+/* .member-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.member-name {
+    text-align: center;
+    font-weight: bold;
+}
+
+.member-role {
+    text-align: center;
+    color: var(--gray);
+}
+
+/* Portfolio Styling */
+
+.project-categories-buttons button {
+    color: var(--black);
+    font-weight: 600;
+    background-color: var(--light-bg);
+    border: none;
+    border-radius: 4;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+
+.project-categories-buttons button.active {
+    background-color: var(--blue);
+    color: white;
+}
+
+.project-name {
+    font-weight: bold;
+}
+
+.project-category {
+    color: var(--gray);
+}
+
+
+/* FOOTER */
+footer {
+    background-color: var(--dark-bg);
+}
+
+.footer-content > a {
+    font-family: 'Raleway', sans-serif;
+    color: var(--blue);
+    font-size: 24px;
+}
+
+.footer-content > a span {
+    color: white;
+}
+
+.footer-content .address a {
+    color: var(--gray);
+    font-style: normal;
+}
+
+.business-details a {
+    color: var(--gray);
+    font-style: normal;
 }
